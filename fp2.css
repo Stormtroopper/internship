@@ -1,0 +1,216 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+#title {
+    background-color: #0f186e;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-Bold";
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.row {
+    text-align: left;
+}
+
+.big-heading {
+    font-family: "Montserrat-Bold";
+    font-size: 7.5 rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3 rem;
+    line-height: 1.5;
+}
+
+
+/* container-fluid */
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+
+/* navigation */
+
+.navbar {
+    padding: 0 0 4.5rem;
+    background-color: #0f186e;
+}
+
+.list li {
+    padding-left: 6em;
+}
+
+.list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding-left: 4em;
+}
+
+.list li {
+    padding-left: 2em;
+}
+
+
+/* Section */
+
+.colored-section {
+    background-color: #0f186e;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    font-family: "ubuntu";
+    font-size: 10.5 rem;
+    font-weight: bold;
+}
+
+.nav-items {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-family: 'Montserrat-light';
+}
+
+
+/* Download Button*/
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+#title {
+    text-align: left;
+}
+
+#title.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+
+/* title-image */
+
+.title-image {
+    width: 60%;
+    position: absolute;
+    left: 40%;
+}
+
+
+/* features */
+
+.feature-title {
+    font-size: 1.5 rem;
+}
+
+#features {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    padding: 4.5%;
+    text-align: center;
+}
+
+.feature-box::after:hover {
+    background-color: #0f186e;
+}
+
+.icon {
+    color: #0f186e;
+    margin-bottom: 1 rem;
+}
+
+
+/* testimonial */
+
+#testimonials {
+    background-color: #0f186e;
+}
+
+.testimonial-text {
+    font-size: 3 rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 20%;
+    border-radius: 80%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #0f186e;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+/* Footer-section */
+
+#footer {
+    padding: 6% 10%;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+
+/* option */
+
+.option {
+    font-weight: 300;
+    font-style: oblique;
+}
+
+
+/* small-icons */
+
+.fas fa-bullseye::after:hover {
+    background-color: #ef8172;
+}
+
+.fas fa-check-circle::after:hover {
+    background-color: #ef8172;
+}
+
+.fas fa-heart::after:hover {
+    background-color: #ef8172;
+}
+
+@media (max-width:1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
