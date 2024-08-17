@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dice{
+    text-align:center;
+    display: inline-block;
+    height: 70%;
+}
+.container-fluid{
+    margin: auto;
+    width: 70%;
+}
+.text-white{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    margin-left:430px ;
+    margin: 30px;
+}
+p {
+    font-size: 2rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  img {
+    width: 80%;
+  }
+  
+body {
+    background-color: #393E46;
+  }
+  footer>div{
+    margin-top: 5%;
+    margin-bottom: 4rem;
+    text-align: center;
+    width: 100%;
+  }

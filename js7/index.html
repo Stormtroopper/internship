@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-image: url('./images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: "Poppins",sans-serif;
+        }
+        .bx{
+   
+            padding-left: 12px;
+        }
+        .bx:hover{
+            transform: perspective(200px) scale(1.2);
+            cursor: pointer;
+        }
+        .bx-search{
+            padding: 0;
+        }
+        .container{
+            position: relative;
+            width: 420px;
+            height:555px;
+            border: 2px solid;
+            border-radius: 13px;
+            padding: 25px;
+            margin-top: 30px;
+            background: aqua;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 9px;
+        }
+        button{
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 800;
+            background-color: navy;
+            height: 40px;
+            width: 30%;
+            color: white;
+        }
+        button:hover{
+            transform: perspective(200px) scale(1.2);
+        }
+        .weather-box{
+            text-align: center;
+            margin: 45px;
+        }
+
+        .weather-box .temperature{
+            position: relative;
+            font-size: 90px;
+            line-height: 1;
+            font-weight: 700;
+            margin-top:-390px;
+            left: 10px;
+        }
+        .weather-box img{
+            position: relative;
+            width: 15%;
+            height: 150px;
+            margin-top: -933px;
+            /* background-color: rgba(0,0,0,0); */
+            /* mix-blend-mode:saturation; */
+        }
+
+        .weather-box .temperature span{
+            position: absolute;
+            font-size: 25px;
+        }
+        .weather-box .description{
+            position: relative;
+            left:10px;
+            font-size: 23px;
+            font-weight: 550;
+            text-transform: uppercase;
+            color: gray;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .weather-details {
+            position: absolute;
+            top: 445px;
+            left: 530px;
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+        }
+        .weather-details .humidity,.weather-details .wind{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10%;
+            gap: 5px;
+            margin-right: 10px;
+        }
+        .weather-details span{
+            display: inline-block;
+            font-size: 19px;
+            font-weight: 750;
+        }
+        .weather-details p{
+            font-size: 15px;
+            font-weight: 450;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <i class='bx bxs-map'></i>
+            <input class="form-control text-center" type="text" id="weather-input" placeholder="Enter Your location"> 
+            <button class="bx bx-search"><b>Search</b></button>
+        </div>
+    </div>
+    <div class="weather-box">
+        <div class="inside-box">
+            <div class="info-weather">
+                <div class="weather">
+                    <img src="./images/clouds-2-transformed.png" alt="" srcset="">
+                    <p class="temperature">233<span>C</span></p>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-humid"><span>0%</span></div>
+                </div>
+                <p>Humidity</p>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info-wind"><span>0km/hr</span></div>
+                </div>
+                <p>Wind Speed</p>
+
+            </div>
+            <div class="not-found">
+                <div class="box">
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
